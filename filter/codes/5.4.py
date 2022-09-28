@@ -1,31 +1,22 @@
-# Plotting h(n) by its definition
-
-# Name: Ankit Saha
-# Roll number: AI21BTECH11004
-
 import numpy as np
 import matplotlib.pyplot as plt
-import scipy
+import subprocess
 
-def delta(n):
-    if n == 0:
-        return 1
-    else:
-        return 0
 
-def h(n):
-    if n == 0:
-        return 1
-    else:
-        return delta(n) + delta(n-2) - 0.5*h(n-1)
 
-vec_h = scipy.vectorize(h, otypes=[float])
+k = 12
+h = np.zeros(k)
+h[0] = 1
+h[1] = -0.5*h[0]
+h[2] = -0.5*h[1] + 1
 
-N = np.linspace(0, 19, 20)
-plt.stem(N, vec_h(N))
+for n in range(3,k-1):
+		h[n] = -0.5*h[n-1]
+
+
+plt.stem(range(0,k),h)
+plt.title('Impulse Response Definition')
 plt.xlabel('$n$')
 plt.ylabel('$h(n)$')
 plt.grid()
-plt.title('Impulse Response Definition')
 plt.savefig('../figs/5.4.png')
-plt.show()
