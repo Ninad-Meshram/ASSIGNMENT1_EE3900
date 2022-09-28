@@ -1,8 +1,4 @@
-# Plotting y(n)
-
-# Name: Ankit Saha
-# Roll number: AI21BTECH11004
-
+# Ninad Nitin Meshram
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy
