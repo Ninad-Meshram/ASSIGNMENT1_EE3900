@@ -25,4 +25,4 @@ plt.ylabel('$|H(e^{\jmath\omega})| $')
 plt.grid()# minor
 
 #if using termux
-plt.savefig('../figs/4.5.pdf')
+plt.savefig('../figs/4.5.png')
