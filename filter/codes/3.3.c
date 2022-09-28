@@ -1,4 +1,3 @@
-// Ninad Nitin Meshram
 #include <stdio.h>
 
 #define N 20
