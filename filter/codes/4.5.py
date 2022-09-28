@@ -1,26 +1,34 @@
-# Plotting the magnitude of the discrete-time Fourier transform of x(n)
-
-# Name: Ankit Saha
-# Roll number: AI21BTECH11004
-
+# Ninad Nitin Meshram
 import numpy as np
 import matplotlib.pyplot as plt
+#if using termux
+import subprocess
+import shlex
+#end if
 
-def H1(z):
-    return (1 + z**-2) / (1 + 0.5*(z**-1))
 
-def H2(w):
-    return 4*np.abs(np.cos(w)) / np.sqrt(5 + 4*np.cos(w))
+#DTFT
+def H(z):
+	num = np.polyval([1,0,1],z**(-1))
+	den = np.polyval([0.5,1],z**(-1))
+	H = num/den
+	return H
+		
 
-Omega1 = np.linspace(-3.5*np.pi, 3.5*np.pi, 80)
-Omega2 = np.linspace(-3.5*np.pi, 3.5*np.pi, 500)
 
-plt.plot(Omega2, H2(Omega2), label='$\\frac{4|\cos\omega|}{\sqrt{5 + 4\cos\omega}}$')
-plt.plot(Omega1, np.abs(H1(np.exp(1j * Omega1))), 'o', label='$\\frac{|1 + e^{-2\jmath\omega}|}{|1 + \\frac{1}{2} e^{-\jmath\omega}|}$')
+#Input and Output
+omega = np.linspace(-3*np.pi,3*np.pi,1e2)
+
+#subplots
+plt.plot(omega, abs(H(np.exp(1j*omega))))
 plt.title('Filter Frequency Response')
 plt.xlabel('$\omega$')
 plt.ylabel('$|H(e^{\jmath\omega})| $')
-plt.grid()
-plt.legend(loc='upper right')
+plt.grid()# minor
+
+#if using termux
+plt.savefig('../figs/4.5.pdf')
 plt.savefig('../figs/4.5.png')
-plt.show()
+subprocess.run(shlex.split("termux-open ../figs/dtft.pdf"))
+#else
+#plt.show()
