@@ -1,4 +1,3 @@
-# Ninad Nitin Meshram
 import numpy as np
 import matplotlib.pyplot as plt
 #If using termux
