@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1664404423 "/home/ninad/Desktop/assignment1_ee3900/ASSIGNMENT1_EE3900/filter/main.tex" "main.pdf" "main" 1664404424
+["pdflatex"] 1664427594 "/home/ninad/Desktop/assignment1_ee3900/ASSIGNMENT1_EE3900/filter/main.tex" "main.pdf" "main" 1664427596
   "/etc/texmf/web2c/texmf.cnf" 1664400873 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/ninad/Desktop/assignment1_ee3900/ASSIGNMENT1_EE3900/filter/main.tex" 1664404422 52777 f2a812864ce42a72a843d0ced85ea960 ""
+  "/home/ninad/Desktop/assignment1_ee3900/ASSIGNMENT1_EE3900/filter/main.tex" 1664427594 52777 bcc5b9d63ddfff6d9f73d1633447efd6 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -156,9 +156,9 @@
   "figs/7.2.1.png" 1664095991 22955 dbf5c8bd1c24447893d6619165a5e6b8 ""
   "figs/7.2.2.png" 1664095991 31929 63cd3974176f3c240359f0f503a69ae9 ""
   "figs/7.2.3.png" 1664095991 17184 475a7a0b1f26c3474b23ac17e7d62421 ""
-  "main.aux" 1664404424 7260 214d65a9f723422d072c387a203c7447 "pdflatex"
-  "main.out" 1664404424 836 1054b0346f3f8e3c6409f212c6abfd32 "pdflatex"
-  "main.tex" 1664404422 52777 f2a812864ce42a72a843d0ced85ea960 ""
+  "main.aux" 1664427596 7260 214d65a9f723422d072c387a203c7447 "pdflatex"
+  "main.out" 1664427596 836 1054b0346f3f8e3c6409f212c6abfd32 "pdflatex"
+  "main.tex" 1664427594 52777 bcc5b9d63ddfff6d9f73d1633447efd6 ""
   (generated)
   "main.aux"
   "main.log"
